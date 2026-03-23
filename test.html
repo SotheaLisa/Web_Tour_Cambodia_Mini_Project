@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cambodia Tours</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <header class="bg-green-900 text-white shadow-md">
+  <div class="flex justify-between items-center px-20 py-5">
+
+    <!-- Logo -->
+    <h2 class="text-xl font-bold">Cambodia Tours</h2>
+
+    <ul class="flex space-x-6 items-center">
+
+      <!-- Home -->
+      <li>
+        <a href="index.html" class="hover:text-green-300">Home</a>
+      </li>
+
+      <!-- Programs Dropdown -->
+<li class="relative group">
+  
+  <a href="#" class="hover:text-green-300">Programs</a>
+
+  <div class="absolute left-0 top-full hidden group-hover:block 
+              bg-white text-black w-48 rounded-lg shadow-lg z-50">
+
+    <a href="culture.html" class="block px-4 py-3 hover:bg-gray-200">
+      Cultural
+    </a>
+
+    <a href="nature.html" class="block px-4 py-3 hover:bg-gray-200">
+      Nature & Adventure
+    </a>
+
+    <a href="entertainment.html" class="block px-4 py-3 hover:bg-gray-200">
+      Entertainment
+    </a>
+
+  </div>
+
+</li>
+
+      <!-- Destinations Dropdown -->
+      <li class="relative group">
+        <a href="destinations.html" class="hover:text-green-300">Destinations</a>
+
+        <div class="absolute left-0 top-full hidden group-hover:block bg-white text-black mt-2 w-56 rounded-xl shadow-lg max-h-64 overflow-y-auto">
+
+          <a href="phnompenh.html" class="block px-4 py-2 hover:bg-green-100">Phnom Penh</a>
+          <a href="siemreap.html" class="block px-4 py-2 hover:bg-green-100">Siem Reap</a>
+          <a href="kohkong.html" class="block px-4 py-2 hover:bg-green-100">Koh Kong</a>
+          <a href="kampot.html" class="block px-4 py-2 hover:bg-green-100">Kampot</a>
+          <a href="sihanoukville.html" class="block px-4 py-2 hover:bg-green-100">Sihanoukville</a>
+          <a href="mondulkiri.html" class="block px-4 py-2 hover:bg-green-100">Mondulkiri</a>
+          <a href="ratanakiri.html" class="block px-4 py-2 hover:bg-green-100">Ratanakiri</a>
+          <a href="kompongthom.html" class="block px-4 py-2 hover:bg-green-100">Kompong Thom</a>
+
+        </div>
+      </li>
+
+      <!-- About -->
+      <li>
+        <a href="about.html" class="hover:text-green-300">About</a>
+      </li>
+
+      <!-- Contact -->
+      <li>
+        <a href="contact.html" class="hover:text-green-300">Contact</a>
+      </li>
+
+    </ul>
+  </div>
+</header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="h-[90vh] bg-cover bg-center flex items-center pl-24 text-white"> 
+        <div>
+            
+            <h1 class="text-6xl font-bold mb-5 ">
+                Welcome To Cambodia Tours
+            </h1>
+
+            <p class="mb-6 text-lg ">
+                Where adventure meets culture and discovery. Explore the beauty of Cambodia
+                through unique travel experiences,<br>
+                from ancient temples and vibrant cities
+                to peaceful countryside and stunning natural landscapes.
+            </p>
+
+            <a href="programs.html">
+                <button class="bg-green-600 px-6 py-3 rounded hover:bg-green-700">
+                    Explore Programs
+                </button>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Test javascript -->
+    <script>
+
+        const images = [
+            
+            "cambodia-tg.png",
+            "https://www.agoda.com/wp-content/uploads/2025/12/16-Cambodia.png",
+            "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/90/2019/07/16102141/Phnom-Penh-City-View-e1563272521241-1170x780.jpg",
+            "https://nowboarding.changiairport.com/travel-the-world/travel-guide-cambodia-phnom-penh/_jcr_content/_cq_featuredimage.img.png"
+
+        ];
+
+        let index = 0;
+
+        setInterval(function () {
+
+            index++;
+            if (index >= images.length) {
+                index = 0;
+            }
+
+            document.getElementById("hero").style.backgroundImage =
+                "url('" + images[index] + "')";
+
+        }, 4000);
+
+    </script><br><br><br><br><br>
+
+    <!-- Programs Section -->
+    <section class="py-20 text-center px-20">
+
+        <h2 class="text-3xl font-bold">The Famous Places in Cambodia</h2>
+
+        <div class="grid grid-cols-4 gap-5 mt-10">
+
+            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnCxVEcKa14n-3r2sF9Wc0f0fjeRxsj0lbKQ&s"
+                    class="w-full h-52 object-cover rounded-t-lg">
+                <h3 class="p-4 font-semibold">Phnom Penh</h3>
+            </div>
+
+            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfcJhZd0bdForD7xdQdN99OIKJ5Wd8YyCIAQ&s"
+                    class="w-full h-52 object-cover rounded-t-lg">
+                <h3 class="p-4 font-semibold">Siem Reap</h3>
+            </div>
+
+            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8E6sb8iDEoN8koMPLIP7MT7RfTacCCnMOPA&s"
+                    class="w-full h-52 object-cover rounded-t-lg">
+                <h3 class="p-4 font-semibold">Kampot</h3>
+            </div>
+
+            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <img src="https://www.guidingcambodia.com/wp-content/uploads/2023/11/Koh-Andet-Eco-Resort-01-453x340-1.jpg"
+                    class="w-full h-52 object-cover rounded-t-lg">
+                <h3 class="p-4 font-semibold">Koh Kong</h3>
+            </div>
+
+            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <img src="https://www.trailsofindochina.com/wp-content/uploads/2018/04/Sihanoukville_header.jpg"
+                    class="w-full h-52 object-cover rounded-t-lg">
+                <h3 class="p-4 font-semibold">Sihanoukville</h3>
+            </div>
+
+            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeEGRhQ9dpqI5rWofTTVono_Cnc9AaqvkLaQ&s"
+                    class="w-full h-52 object-cover rounded-t-lg">
+                <h3 class="p-4 font-semibold">Mondulkiri</h3>
+            </div>
+
+            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <img src="https://www.mondulkiriproject.org/wp-content/uploads/2019/06/Ratanakiri.jpg"
+                    class="w-full h-52 object-cover rounded-t-lg">
+                <h3 class="p-4 font-semibold">Ratanakiri</h3>
+            </div>
+
+            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYb-yg9XROPMHvbgC8ANbHTjFK8CVmeltE7g&s"
+                    class="w-full h-52 object-cover rounded-t-lg">
+                <h3 class="p-4 font-semibold">Kompong Thom</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Food Section -->
+    <section class="py-20 text-center px-20">
+
+        <h2 class="text-3xl font-bold">Traditional Cambodian Foods</h2>
+
+        <div class="grid grid-cols-4 gap-5 mt-10">
+
+            <div class=" bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRMJ4dvQspBBvxdUp0LiadpxDxW-pL-h8Slg&s"
+                    class="w-full h-52 object-cover rounded-t-lg">
+                <h3 class="p-4 font-semibold">Amok</h3>
+            </div>
+
+            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEcXG-BX6OLUPbd_wOsiTksofkULSAoAfGag&s"
+                    class="w-full h-52 object-cover rounded-t-lg">
+                <h3 class="p-4 font-semibold">Num Banhchok</h3>
+            </div>
+
+            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7yiyJY1XKV8fcPrfGBAY4UFiVQCMRj9EGkg&s"
+                    class="w-full h-52 object-cover rounded-t-lg">
+                <h3 class="p-4 font-semibold">Tek Kroeung</h3>
+            </div>
+
+            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <img src="https://i.ytimg.com/vi/qO7jidmvDYk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCudz-cr9DQJKvoXT1llRkLmadxfQ"
+                    class="w-full h-52 object-cover rounded-t-lg">
+                <h3 class="p-4 font-semibold">Prahok</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Activism -->
+    <section class="py-20 text-center px-20 bg-gray-200">
+
+        <h2 class="text-3xl font-bold">Activities For Visitors</h2>
+
+        <div class="grid grid-cols-2 gap-6 mt-10">
+
+            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <img src="https://res.klook.com/image/upload/w_500,h_313,c_fill,q_85/activities/t63gnygnuxq7eld1pkrl.jpg"
+                    class="w-full h-52 object-cover rounded-t-lg">
+                <h3 class="p-4 font-semibold">Kompong Pluk Floating Village</h3>
+            </div>
+
+            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSoLY9rxpfB_bFqVWwJ0aWBkk_Wv6BC9Punw&s"
+                    class="w-full h-52 object-cover rounded-t-lg">
+                <h3 class="p-4 font-semibold">Riding Around Angkor Wat</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 text-center">
+
+        <h2 class="text-3xl font-bold">Inspirational Stories</h2>
+
+        <div class="flex justify-center gap-8 mt-10">
+
+            <div>
+                <div class="bg-white p-8 w-80 shadow rounded-lg">
+                    <p class="mb-4">
+                        Amazing experience traveling abroad and helping communities.
+                    </p>
+                </div>
+                <div
+                    class="bg-green-800 shadow rounded-s-s-lg -mt-10 p-8 w-80 hover:shadow-lg transition-shadow duration-300">
+                    <h4 class="font-semibold text-white">Emma Johnson</h4>
+                </div>
+            </div>
+
+
+            <div
+                class="max-w-sm bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-2xl transition duration-300">
+
+                <p class="text-gray-600 italic mb-6">
+                    “Amazing experience traveling abroad and helping communities.
+                    It was truly life-changing and unforgettable.”
+                </p>
+
+                <div class="flex flex-col items-center">
+
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg"
+                        class="w-16 h-16 rounded-full border-4 border-green-700 shadow-md -mt-4">
+
+                    <h4 class="mt-3 font-semibold text-green-900">
+                        Emma Johnson
+                    </h4>
+
+                    <span class="text-sm text-gray-500">
+                        Volunteer Participant
+                    </span>
+
+                </div>
+
+            </div>
+            <div class="bg-white p-8 w-80 shadow rounded-lg hover:shadow-lg transition-shadow duration-300">
+                <p class="mb-4">
+                    Great opportunity to visit Cambodia.
+                </p>
+                <h4 class="font-semibold">Mark Stone</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white text-center py-10">
+
+        <h3 class="text-xl font-bold mb-3">Cambodia Tour</h3>
+        <p>Our programs are designed to help you learn, connect with local communities,
+            and create unforgettable memories while discovering the heart of Cambodia. 🌏✈️</p>
+        <p>Email: info@cambodiatour.com</p>
+        <p>Phone: +123 456 789</p>
+
+    </footer>
+
+</body>
+
+</html>
