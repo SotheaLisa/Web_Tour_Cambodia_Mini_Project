@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cam-Tourist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+
+<!-- Navbar -->
+    <header class="bg-green-900 text-white fixed top-0 left-0 w-full z-50">
+        <div class="flex justify-between items-center px-20 py-5">
+
+            <h2 class="text-xl font-bold">Cam-Tourist</h2>
+
+            <ul class="flex space-x-6 items-center">
+
+                <li>
+                    <a href="index.html" class="hover:text-yellow-300">Home</a>
+                </li>
+
+                <!-- Programs Dropdown -->
+                <li class="relative group">
+                    <a href="#" class="hover:text-yellow-300">Programs</a>
+
+                    <div class="absolute left-0 top-full hidden group-hover:block bg-white text-black w-48 rounded-lg shadow-lg z-50">
+                        <a href="culture.html" class="block px-4 py-2 hover:bg-gray-200">
+                            Cultural
+                        </a>
+
+                        <a href="nature.html" class="block px-4 py-2 hover:bg-gray-200">
+                            Nature & Adventure
+                        </a>
+
+                        <a href="entertainment.html" class="block px-4 py-2 hover:bg-gray-200">
+                            Entertainment
+                        </a>
+                    </div>
+                </li>
+
+                <!-- Destinations Dropdown -->
+                <li class="relative group">
+                    <a href="#" class="hover:text-yellow-300">Destinations</a>
+
+                    <div class="absolute left-0 top-full hidden group-hover:block bg-white text-black w-48 rounded-lg shadow-lg z-50">
+                        <a href="phnompenh.html" class="block px-4 py-2 hover:bg-gray-200">
+                            Phnom Penh
+                        </a>
+
+                        <a href="siemreap.html" class="block px-4 py-2 hover:bg-gray-200">
+                            Siem Reap
+                        </a>
+
+                        <a href="kohkong.html" class="block px-4 py-2 hover:bg-gray-200">
+                            Koh Kong
+                        </a>
+
+                        <a href="kampot.html" class="block px-4 py-2 hover:bg-gray-200">
+                            Kampot
+                        </a>
+
+                        <a href="sihaknuk.html" class="block px-4 py-2 hover:bg-gray-200">
+                            Sihanoukville
+                        </a>
+
+                        <a href="mondulkiri.html" class="block px-4 py-2 hover:bg-gray-200">
+                            Mondulkiri
+                        </a>
+
+                        <a href="ratanakiri.html" class="block px-4 py-2 hover:bg-gray-200">
+                            Ratanakiri
+                        </a>
+
+                    </div>
+                </li>
+
+                <!-- Normal Menu -->
+                <li>
+                    <a href="about.html" class="hover:text-yellow-300">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </header><br><br>
+
+<!-- Hero Section -->
+ <div class="relative h-[1000px] overflow-hidden w-full">
+        <img src="https://www.visitsoutheastasia.travel/wp-content/uploads/2022/12/Cambodia-4-1-1024x678.jpg" 
+             alt="Angkor Wat" 
+             class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
+            <p class="text-xl mb-3 font-medium">Cambodia Tour</p>
+            <h1 class="text-5xl font-serif font-bold mb-4">The Nature in Cambodia</h1>
+            <p class="text-base">March 12, 2026</p>
+        </div>
+    </div><br>
+
+    <!-- Articles Grid -->
+    <div class="container mx-auto px-8 mt-12 mb-12">
+        <div class="grid grid-cols-3 gap-8">
+            <!-- Article 1 -->
+            <article class="group cursor-pointer">
+                <div class="overflow-hidden mb-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0NhYy6OTlaCSlUm8CH6EriMQHgmumL8lgIQ&s" 
+                         alt="Asara" 
+                         class="w-full h-56 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="text-center">
+                    <span class="inline-block text-amber-500 px-6 py-1 text-md font-light mb-3 ">
+                        ទឹកជ្រោះ
+                    </span>
+                    <h3 class="text-gray-900 font-medium mb-2 leading-snug text-lg">
+                        "ទឹកជ្រោះហូរលើថ្ម បង្ហាញភាពស្រស់ស្អាតនៃធម្មជាតិ។"<br>
+កន្លែងល្អសម្រាប់ការផ្សងព្រេង និងសម្រាកចិត្ត។<br>
+                    </h3>
+                    <p class="text-gray-500 text-sm">2 days ago</p>
+                </div>
+            </article>
+
+            <article class="group cursor-pointer">
+                <div class="overflow-hidden mb-4">
+                    <img src="https://cdn.kimkim.com/files/a/images/8abb74533dc9cc8df1d9d920664fb9f529cf53e4/original-77230898a587caaa919d7de8f5394165.jpg" 
+                         alt="Budist" 
+                         class="w-full h-56 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="text-center">
+                    <span class="inline-block text-amber-500 px-6 py-1 text-md font-light mb-3 ">
+                        រូបចម្លាក់
+                    </span>
+                    <h3 class="text-gray-900 font-medium mb-2 leading-snug text-lg">
+                        "រូបចម្លាក់បុរាណ បង្ហាញសិល្បៈ និងសាសនាខ្មែរ។"<br>
+ពន្លឺថ្ងៃលិចបន្ថែមអារម្មណ៍ស្ងប់ស្ងាត់ និងកំណាព្យ។<br>
+                    </h3>
+                    <p class="text-gray-500 text-sm">7 days ago</p>
+                </div>
+            </article>
+
+            <article class="group cursor-pointer">
+                <div class="overflow-hidden mb-4">
+                    <img src="https://www.visitsoutheastasia.travel/wp-content/uploads/2022/12/Cambodia-3-1024x635.jpg" 
+                         alt="Budist" 
+                         class="w-full h-56 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="text-center">
+                    <span class="inline-block text-amber-500 px-6 py-1 text-md font-light mb-3 ">
+                       ទឹកជ្រោះ
+                    </span>
+                    <h3 class="text-gray-900 font-medium mb-2 leading-snug text-lg">
+                        "ទឹកជ្រោះហូរលើថ្ម បង្ហាញភាពស្រស់ស្អាតនៃធម្មជាតិ។"<br>
+កន្លែងល្អសម្រាប់ការផ្សងព្រេង និងសម្រាកចិត្ត។<br>
+                    </h3>
+                    <p class="text-gray-500 text-sm">7 days ago</p>
+                </div>
+            </article>
+
+            <!-- Article 1 -->
+            <article class="group cursor-pointer">
+                <div class="overflow-hidden mb-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6TNPI17mKaSdm1LlxXElDr83l0YFA4iRSRw&s" 
+                         alt="Asara" 
+                         class="w-full h-56 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="text-center">
+                    <span class="inline-block text-amber-500 px-6 py-1 text-md font-light mb-3 ">
+                        ធម្មជាតិ
+                    </span>
+                    <h3 class="text-gray-900 font-medium mb-2 leading-snug text-lg">
+                        "វាលខៀវស្រស់ស្អាត បង្ហាញជីវិតជនបទ។"<br>
+កន្លែងសម្រាប់សម្រាក និងរីករាយទេសភាពធម្មជាតិ។<br>
+                    </h3>
+                    <p class="text-gray-500 text-sm">2 days ago</p>
+                </div>
+            </article>
+
+            <article class="group cursor-pointer">
+                <div class="overflow-hidden mb-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwLkklg2u_m30L0cVflbmlTfSMqz8O4tyd-w&s" 
+                         alt="Budist" 
+                         class="w-full h-56 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="text-center">
+                    <span class="inline-block text-amber-500 px-6 py-1 text-md font-light mb-3 ">
+                        ថ្ងៃលិច
+                    </span>
+                    <h3 class="text-gray-900 font-medium mb-2 leading-snug text-lg">
+                        "ពន្លឺថ្ងៃលិចបញ្ចេញពណ៌ស្រស់លើផ្ទៃទឹក។"<br>
+បង្កើតអារម្មណ៍ស្ងប់ស្ងាត់ និងកំណាព្យ។<br>
+                    </h3>
+                    <p class="text-gray-500 text-sm">7 days ago</p>
+                </div>
+            </article>
+
+            <article class="group cursor-pointer">
+                <div class="overflow-hidden mb-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ10DICvHj8tV67x8-hVuerfSZT0h5D6mXPZg&s" 
+                         alt="Culture" 
+                         class="w-full h-56 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="text-center">
+                    <span class="inline-block text-amber-500 px-6 py-1 text-md font-light mb-3 ">
+                        ប្រាសាទអង្គរវត្ត
+                    </span>
+                    <h3 class="text-gray-900 font-medium mb-2 leading-snug text-lg">
+                        "អង្គរវត្ត ជាមរតកពិភពលោកដ៏អស្ចារ្យ។"<br>
+ការឆ្លុះទឹកបន្ថែមភាពអស្ចារ្យ និងស្រស់ស្អាត។<br>
+                    </h3>
+                    <p class="text-gray-500 text-sm">4 days ago</p>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+    <div class="relative h-[500px] overflow-hidden w-full">
+        <img src="https://bbqboy.net/wp-content/uploads/2023/03/phnom-bokor-national.jpg" 
+             alt="Cambodian Culture" 
+             class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center py-5 gap-7 text-white text-center px-4">
+            <p class="text-xl mb-3 py-15 font-semibold">Cambodia Tour</p><br><br>
+            <p class="text-base">ធម្មជាតិកម្ពុជា មានភាពសម្បូរបែប និងស្រស់ស្អាត ដោយរួមបញ្ចូលព្រៃភ្នំ ទន្លេ សមុទ្រ និងជីវចម្រុះដ៏សំខាន់។ វាមិនត្រឹមតែជាកន្លែងទេសចរណ៍ទេ ប៉ុន្តែជាមូលដ្ឋានសម្រាប់ជីវិតប្រជាជន និងសេដ្ឋកិច្ចជាតិផងដែរ។
+
+ព្រៃឈើនៅកម្ពុជា គ្របដណ្តប់ប្រហែល ៤១% នៃផ្ទៃដី និងមានតួនាទីសំខាន់ក្នុងជីវិតជនបទ។ វាផ្តល់អាហារ ឈើ ថ្នាំបុរាណ និងធនធានសម្រាប់ការរស់នៅ។ ជាច្រើនគ្រួសារជនបទ ពឹងផ្អែកលើព្រៃសម្រាប់ចំណូល និងជីវភាពប្រចាំថ្ងៃ។
+
+ជាមួយនឹងនេះ កម្ពុជា មានជីវចម្រុះយ៉ាងសម្បូរបែប ដោយមានសត្វស្លាបជាង ៥២៥ ប្រភេទ និងសត្វព្រៃជាច្រើន។ តំបន់ដូចជា ភ្នំក្រវាញ និងភ្នំអានាមីត គឺជាគន្លងសំខាន់សម្រាប់ការអភិរក្សធម្មជាតិ។
+
+ទេសភាពធម្មជាតិ ក៏ជាចំណុចទាក់ទាញដ៏សំខាន់ផងដែរ។ ភ្នំកូលែន មានទឹកជ្រោះ និងមានអត្ថន័យប្រវត្តិសាស្ត្រនិងសក្ដិសិទ្ធិ។ ភ្នំក្រវាញ មានព្រៃដ៏សម្បូរបែប និងសត្វព្រៃជាច្រើន។ ទន្លេមេគង្គ ជាទន្លេសំខាន់ដែលផ្តល់ទាំងទេសភាព និងជីវភាពសម្រាប់ប្រជាជន។ ខណៈដែលឆ្នេរ និងកោះដូចជា កោះរ៉ុង និងកោះកុង មានទឹកសមុទ្រស្អាត និងទេសភាពទាក់ទាញ។
+
+ធម្មជាតិកម្ពុជា ក៏មានអត្ថប្រយោជន៍ជាច្រើន ដូចជា ជួយរក្សាអាកាសធាតុ ការពារបរិស្ថាន និងប្រឆាំងនឹងការប្រែប្រួលអាកាសធាតុ។ វាក៏ផ្តល់អាហារ ទឹក និងធនធានសម្រាប់ជីវិតប្រចាំថ្ងៃរបស់ប្រជាជន។
+
+ជារួម ធម្មជាតិកម្ពុជា គឺជាទ្រព្យសម្បត្តិសំខាន់ ដែលគួរឱ្យថែរក្សា និងអភិរក្សសម្រាប់អនាគត។
+        </div>
+    </div><br><br><br>
+
+<!--  Footer -->
+<footer class="bg-green-900 text-white py-10">
+  <div class="max-w-4xl mx-auto text-center">
+
+    <h3 class="text-2xl font-bold mb-4">Cam-Tourist</h3>
+
+    <p class="mb-2">Discover the heart of Cambodia.</p>
+
+    <p>Email: info@cambodiatour.com</p>
+    <p>Phone: +123 456 789</p>
+
+  </div>
+</footer>
+
+</body>
+</html>
