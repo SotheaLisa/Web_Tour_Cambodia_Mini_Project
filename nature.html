@@ -9,43 +9,57 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
 
   <style>
     body {
       font-family: 'Poppins', sans-serif;
+      color: #1f2937;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
     }
   </style>
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-[#f7f3e8] text-slate-800 pt-24 md:pt-20">
 
 <!-- Navbar -->
-    <header class="bg-green-900 text-white fixed top-0 left-0 w-full z-50">
-        <div class="flex justify-between items-center px-20 py-5">
+    <header class="bg-[#0f3d2e]/95 backdrop-blur text-white shadow-lg shadow-black/10 fixed top-0 left-0 w-full z-50">
+        <div class="flex flex-wrap md:flex-nowrap justify-between items-center gap-4 px-4 sm:px-8 lg:px-20 py-4 md:py-5">
 
-            <h2 class="text-xl font-bold">Cam-Tourist</h2>
+            <h2 class="text-lg sm:text-xl font-bold tracking-wide text-amber-100">Cambodia Tours</h2>
 
-            <ul class="flex space-x-6 items-center">
+            <button type="button" data-menu-toggle aria-expanded="false" aria-label="Open menu" class="md:hidden p-2">
+                <span class="material-symbols-outlined text-3xl leading-none">menu</span>
+            </button>
+
+            <ul data-menu class="hidden w-full flex-col gap-3 text-sm sm:text-base md:flex md:w-auto md:flex-row md:items-center md:gap-6">
 
                 <li>
-                    <a href="index.html" class="hover:text-yellow-300">Home</a>
+                    <a href="index.html" class="block hover:text-amber-300 transition-colors">Home</a>
                 </li>
 
                 <!-- Programs Dropdown -->
                 <li class="relative group">
-                    <a href="#" class="hover:text-yellow-300">Programs</a>
+                    <a href="#" data-dropdown-toggle class="flex items-center justify-between hover:text-amber-300 transition-colors md:block">
+                        Programs
+                        <span class="material-symbols-outlined md:hidden text-base">expand_more</span>
+                    </a>
 
-                    <div class="absolute left-0 top-full hidden group-hover:block bg-white text-black w-48 rounded-lg shadow-lg z-50">
-                        <a href="culture.html" class="block px-4 py-2 hover:bg-gray-200">
+                    <div data-dropdown-menu class="hidden md:absolute md:left-0 md:top-full md:group-hover:block bg-[#fffaf0] text-slate-800 w-full md:w-56 rounded-xl shadow-xl ring-1 ring-amber-100 z-50 mt-2 md:mt-0">
+                        <a href="culture.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Cultural
                         </a>
 
-                        <a href="nature.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="nature.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Nature & Adventure
                         </a>
 
-                        <a href="entertainment.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="entertainment.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Entertainment
                         </a>
                     </div>
@@ -53,34 +67,37 @@
 
                 <!-- Destinations Dropdown -->
                 <li class="relative group">
-                    <a href="#" class="hover:text-yellow-300">Destinations</a>
+                    <a href="#" data-dropdown-toggle class="flex items-center justify-between hover:text-amber-300 transition-colors md:block">
+                        Destinations
+                        <span class="material-symbols-outlined md:hidden text-base">expand_more</span>
+                    </a>
 
-                    <div class="absolute left-0 top-full hidden group-hover:block bg-white text-black w-48 rounded-lg shadow-lg z-50">
-                        <a href="phnompenh.html" class="block px-4 py-2 hover:bg-gray-200">
+                    <div data-dropdown-menu class="hidden md:absolute md:left-0 md:top-full md:group-hover:block bg-[#fffaf0] text-slate-800 w-full md:w-56 rounded-xl shadow-xl ring-1 ring-amber-100 z-50 mt-2 md:mt-0">
+                        <a href="phnompenh.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Phnom Penh
                         </a>
 
-                        <a href="siemreap.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="siemreap.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Siem Reap
                         </a>
 
-                        <a href="kohkong.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="kohkong.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Koh Kong
                         </a>
 
-                        <a href="kampot.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="kampot.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Kampot
                         </a>
 
-                        <a href="sihaknuk.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="sihaknuk.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Sihanoukville
                         </a>
 
-                        <a href="mondulkiri.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="mondulkiri.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Mondulkiri
                         </a>
 
-                        <a href="ratanakiri.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="ratanakiri.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Ratanakiri
                         </a>
 
@@ -89,34 +106,34 @@
 
                 <!-- Normal Menu -->
                 <li>
-                    <a href="about.html" class="hover:text-yellow-300">About</a>
+                    <a href="about.html" class="block hover:text-amber-300 transition-colors">About</a>
                 </li>
 
                 <li>
-                    <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+                    <a href="contact.html" class="block hover:text-amber-300 transition-colors">Contact</a>
                 </li>
 
             </ul>
 
         </div>
-    </header><br><br>
+    </header>
 
 <!-- Hero Section -->
- <div class="relative h-[1000px] overflow-hidden w-full">
+ <div class="relative h-[420px] sm:h-[620px] lg:h-[800px] overflow-hidden w-full">
         <img src="https://www.visitsoutheastasia.travel/wp-content/uploads/2022/12/Cambodia-4-1-1024x678.jpg" 
              alt="Angkor Wat" 
              class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-black bg-opacity-20"></div>
         <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
             <p class="text-xl mb-3 font-medium">Cambodia Tour</p>
-            <h1 class="text-5xl font-serif font-bold mb-4">The Nature in Cambodia</h1>
+            <h1 class="text-3xl sm:text-5xl font-serif font-bold mb-4">The Nature in Cambodia</h1>
             <p class="text-base">March 12, 2026</p>
         </div>
     </div><br>
 
     <!-- Articles Grid -->
-    <div class="container mx-auto px-8 mt-12 mb-12">
-        <div class="grid grid-cols-3 gap-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 mt-12 mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Article 1 -->
             <article class="group cursor-pointer">
                 <div class="overflow-hidden mb-4">
@@ -128,11 +145,11 @@
                     <span class="inline-block text-amber-500 px-6 py-1 text-md font-light mb-3 ">
                         ទឹកជ្រោះ
                     </span>
-                    <h3 class="text-gray-900 font-medium mb-2 leading-snug text-lg">
+                    <h3 class="text-slate-900 font-medium mb-2 leading-snug text-lg">
                         "ទឹកជ្រោះហូរលើថ្ម បង្ហាញភាពស្រស់ស្អាតនៃធម្មជាតិ។"<br>
 កន្លែងល្អសម្រាប់ការផ្សងព្រេង និងសម្រាកចិត្ត។<br>
                     </h3>
-                    <p class="text-gray-500 text-sm">2 days ago</p>
+                    <p class="text-slate-500 text-sm">2 days ago</p>
                 </div>
             </article>
 
@@ -146,11 +163,11 @@
                     <span class="inline-block text-amber-500 px-6 py-1 text-md font-light mb-3 ">
                         រូបចម្លាក់
                     </span>
-                    <h3 class="text-gray-900 font-medium mb-2 leading-snug text-lg">
+                    <h3 class="text-slate-900 font-medium mb-2 leading-snug text-lg">
                         "រូបចម្លាក់បុរាណ បង្ហាញសិល្បៈ និងសាសនាខ្មែរ។"<br>
 ពន្លឺថ្ងៃលិចបន្ថែមអារម្មណ៍ស្ងប់ស្ងាត់ និងកំណាព្យ។<br>
                     </h3>
-                    <p class="text-gray-500 text-sm">7 days ago</p>
+                    <p class="text-slate-500 text-sm">7 days ago</p>
                 </div>
             </article>
 
@@ -164,11 +181,11 @@
                     <span class="inline-block text-amber-500 px-6 py-1 text-md font-light mb-3 ">
                        ទឹកជ្រោះ
                     </span>
-                    <h3 class="text-gray-900 font-medium mb-2 leading-snug text-lg">
+                    <h3 class="text-slate-900 font-medium mb-2 leading-snug text-lg">
                         "ទឹកជ្រោះហូរលើថ្ម បង្ហាញភាពស្រស់ស្អាតនៃធម្មជាតិ។"<br>
 កន្លែងល្អសម្រាប់ការផ្សងព្រេង និងសម្រាកចិត្ត។<br>
                     </h3>
-                    <p class="text-gray-500 text-sm">7 days ago</p>
+                    <p class="text-slate-500 text-sm">7 days ago</p>
                 </div>
             </article>
 
@@ -183,11 +200,11 @@
                     <span class="inline-block text-amber-500 px-6 py-1 text-md font-light mb-3 ">
                         ធម្មជាតិ
                     </span>
-                    <h3 class="text-gray-900 font-medium mb-2 leading-snug text-lg">
+                    <h3 class="text-slate-900 font-medium mb-2 leading-snug text-lg">
                         "វាលខៀវស្រស់ស្អាត បង្ហាញជីវិតជនបទ។"<br>
 កន្លែងសម្រាប់សម្រាក និងរីករាយទេសភាពធម្មជាតិ។<br>
                     </h3>
-                    <p class="text-gray-500 text-sm">2 days ago</p>
+                    <p class="text-slate-500 text-sm">2 days ago</p>
                 </div>
             </article>
 
@@ -201,11 +218,11 @@
                     <span class="inline-block text-amber-500 px-6 py-1 text-md font-light mb-3 ">
                         ថ្ងៃលិច
                     </span>
-                    <h3 class="text-gray-900 font-medium mb-2 leading-snug text-lg">
+                    <h3 class="text-slate-900 font-medium mb-2 leading-snug text-lg">
                         "ពន្លឺថ្ងៃលិចបញ្ចេញពណ៌ស្រស់លើផ្ទៃទឹក។"<br>
 បង្កើតអារម្មណ៍ស្ងប់ស្ងាត់ និងកំណាព្យ។<br>
                     </h3>
-                    <p class="text-gray-500 text-sm">7 days ago</p>
+                    <p class="text-slate-500 text-sm">7 days ago</p>
                 </div>
             </article>
 
@@ -219,11 +236,11 @@
                     <span class="inline-block text-amber-500 px-6 py-1 text-md font-light mb-3 ">
                         ប្រាសាទអង្គរវត្ត
                     </span>
-                    <h3 class="text-gray-900 font-medium mb-2 leading-snug text-lg">
+                    <h3 class="text-slate-900 font-medium mb-2 leading-snug text-lg">
                         "អង្គរវត្ត ជាមរតកពិភពលោកដ៏អស្ចារ្យ។"<br>
 ការឆ្លុះទឹកបន្ថែមភាពអស្ចារ្យ និងស្រស់ស្អាត។<br>
                     </h3>
-                    <p class="text-gray-500 text-sm">4 days ago</p>
+                    <p class="text-slate-500 text-sm">4 days ago</p>
                 </div>
             </article>
 
@@ -236,7 +253,7 @@
              class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-black bg-opacity-20"></div>
         <div class="absolute inset-0 flex flex-col items-center justify-center py-5 gap-7 text-white text-center px-4">
-            <p class="text-xl mb-3 py-15 font-semibold">Cambodia Tour</p><br><br>
+            <p class="text-xl mb-3 font-semibold">Cambodia Tour</p>
             <p class="text-base">ធម្មជាតិកម្ពុជា មានភាពសម្បូរបែប និងស្រស់ស្អាត ដោយរួមបញ្ចូលព្រៃភ្នំ ទន្លេ សមុទ្រ និងជីវចម្រុះដ៏សំខាន់។ វាមិនត្រឹមតែជាកន្លែងទេសចរណ៍ទេ ប៉ុន្តែជាមូលដ្ឋានសម្រាប់ជីវិតប្រជាជន និងសេដ្ឋកិច្ចជាតិផងដែរ។
 
 ព្រៃឈើនៅកម្ពុជា គ្របដណ្តប់ប្រហែល ៤១% នៃផ្ទៃដី និងមានតួនាទីសំខាន់ក្នុងជីវិតជនបទ។ វាផ្តល់អាហារ ឈើ ថ្នាំបុរាណ និងធនធានសម្រាប់ការរស់នៅ។ ជាច្រើនគ្រួសារជនបទ ពឹងផ្អែកលើព្រៃសម្រាប់ចំណូល និងជីវភាពប្រចាំថ្ងៃ។
@@ -249,10 +266,10 @@
 
 ជារួម ធម្មជាតិកម្ពុជា គឺជាទ្រព្យសម្បត្តិសំខាន់ ដែលគួរឱ្យថែរក្សា និងអភិរក្សសម្រាប់អនាគត។
         </div>
-    </div><br><br><br>
+    </div>
 
 <!--  Footer -->
-<footer class="bg-green-900 text-white py-10">
+<footer class="bg-[#0f3d2e] text-amber-50 py-10 px-4 sm:px-6">
   <div class="max-w-4xl mx-auto text-center">
 
     <h3 class="text-2xl font-bold mb-4">Cam-Tourist</h3>
@@ -265,5 +282,46 @@
   </div>
 </footer>
 
+
+<script>
+  const menuButton = document.querySelector('[data-menu-toggle]');
+  const menu = document.querySelector('[data-menu]');
+
+  if (menuButton && menu) {
+    menuButton.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
+      const isOpen = menu.classList.contains('flex');
+      menuButton.setAttribute('aria-expanded', isOpen);
+      if (!isOpen) {
+        document.querySelectorAll('[data-dropdown-menu]').forEach((submenu) => {
+          submenu.classList.add('hidden');
+        });
+      }
+    });
+  }
+
+  document.querySelectorAll('[data-dropdown-toggle]').forEach((button) => {
+    button.addEventListener('click', (event) => {
+      if (window.innerWidth >= 768) return;
+      event.preventDefault();
+      const submenu = button.nextElementSibling;
+      if (submenu) {
+        submenu.classList.toggle('hidden');
+      }
+    });
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768 && menu) {
+      menu.classList.add('hidden');
+      menu.classList.remove('flex');
+      menuButton?.setAttribute('aria-expanded', 'false');
+      document.querySelectorAll('[data-dropdown-menu]').forEach((submenu) => {
+        submenu.classList.add('hidden');
+      });
+    }
+  });
+</script>
 </body>
 </html>

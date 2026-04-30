@@ -9,43 +9,57 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
 
   <style>
     body {
       font-family: 'Poppins', sans-serif;
+      color: #1f2937;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
     }
   </style>
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-[#f7f3e8] text-slate-800 pt-24 md:pt-20">
 
 <!-- Navbar -->
-    <header class="bg-green-900 text-white fixed top-0 left-0 w-full z-50">
-        <div class="flex justify-between items-center px-20 py-5">
+    <header class="bg-[#0f3d2e]/95 backdrop-blur text-white shadow-lg shadow-black/10 fixed top-0 left-0 w-full z-50">
+        <div class="flex flex-wrap md:flex-nowrap justify-between items-center gap-4 px-4 sm:px-8 lg:px-20 py-4 md:py-5">
 
-            <h2 class="text-xl font-bold">Cambodia Tours</h2>
+            <h2 class="text-lg sm:text-xl font-bold tracking-wide text-amber-100">Cambodia Tours</h2>
 
-            <ul class="flex space-x-6 items-center">
+            <button type="button" data-menu-toggle aria-expanded="false" aria-label="Open menu" class="md:hidden p-2">
+                <span class="material-symbols-outlined text-3xl leading-none">menu</span>
+            </button>
+
+            <ul data-menu class="hidden w-full flex-col gap-3 text-sm sm:text-base md:flex md:w-auto md:flex-row md:items-center md:gap-6">
 
                 <li>
-                    <a href="index.html" class="hover:text-yellow-300">Home</a>
+                    <a href="index.html" class="block hover:text-amber-300 transition-colors">Home</a>
                 </li>
 
                 <!-- Programs Dropdown -->
                 <li class="relative group">
-                    <a href="#" class="hover:text-yellow-300">Programs</a>
+                    <a href="#" data-dropdown-toggle class="flex items-center justify-between hover:text-amber-300 transition-colors md:block">
+                        Programs
+                        <span class="material-symbols-outlined md:hidden text-base">expand_more</span>
+                    </a>
 
-                    <div class="absolute left-0 top-full hidden group-hover:block bg-white text-black w-48 rounded-lg shadow-lg z-50">
-                        <a href="culture.html" class="block px-4 py-2 hover:bg-gray-200">
+                    <div data-dropdown-menu class="hidden md:absolute md:left-0 md:top-full md:group-hover:block bg-[#fffaf0] text-slate-800 w-full md:w-56 rounded-xl shadow-xl ring-1 ring-amber-100 z-50 mt-2 md:mt-0">
+                        <a href="culture.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Cultural
                         </a>
 
-                        <a href="nature.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="nature.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Nature & Adventure
                         </a>
 
-                        <a href="entertainment.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="entertainment.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Entertainment
                         </a>
                     </div>
@@ -53,34 +67,37 @@
 
                 <!-- Destinations Dropdown -->
                 <li class="relative group">
-                    <a href="#" class="hover:text-yellow-300">Destinations</a>
+                    <a href="#" data-dropdown-toggle class="flex items-center justify-between hover:text-amber-300 transition-colors md:block">
+                        Destinations
+                        <span class="material-symbols-outlined md:hidden text-base">expand_more</span>
+                    </a>
 
-                    <div class="absolute left-0 top-full hidden group-hover:block bg-white text-black w-48 rounded-lg shadow-lg z-50">
-                        <a href="phnompenh.html" class="block px-4 py-2 hover:bg-gray-200">
+                    <div data-dropdown-menu class="hidden md:absolute md:left-0 md:top-full md:group-hover:block bg-[#fffaf0] text-slate-800 w-full md:w-56 rounded-xl shadow-xl ring-1 ring-amber-100 z-50 mt-2 md:mt-0">
+                        <a href="phnompenh.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Phnom Penh
                         </a>
 
-                        <a href="siemreap.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="siemreap.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Siem Reap
                         </a>
 
-                        <a href="kohkong.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="kohkong.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Koh Kong
                         </a>
 
-                        <a href="kampot.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="kampot.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Kampot
                         </a>
 
-                        <a href="sihaknuk.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="sihaknuk.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Sihanoukville
                         </a>
 
-                        <a href="mondulkiri.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="mondulkiri.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Mondulkiri
                         </a>
 
-                        <a href="ratanakiri.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="ratanakiri.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Ratanakiri
                         </a>
 
@@ -89,122 +106,122 @@
 
                 <!-- Normal Menu -->
                 <li>
-                    <a href="about.html" class="hover:text-yellow-300">About</a>
+                    <a href="about.html" class="block hover:text-amber-300 transition-colors">About</a>
                 </li>
 
                 <li>
-                    <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+                    <a href="contact.html" class="block hover:text-amber-300 transition-colors">Contact</a>
                 </li>
 
             </ul>
 
         </div>
-    </header><br><br>
+    </header>
 
-    <h1 class="text-3xl font-bold text-green-900 text-center mt-10">Welcome to Kampot!</h1><br>
+    <h1 class="text-3xl font-bold text-[#0f3d2e] text-center mt-10">Welcome to Kampot!</h1><br>
 
-    <h2 class="text-center px-20">
+    <h2 class="text-center px-4 sm:px-8 lg:px-20">
         Kampot, is a charming province in southern Cambodia, known for its stunning landscapes, rich culture, and vibrant local life. From the serene riverside to the majestic Bokor Mountain, Kampot offers a unique blend of natural beauty and cultural heritage that captivates every traveler. Whether you're exploring the bustling markets, savoring the famous Kampot pepper, or relaxing by the tranquil beaches, Kampot promises an unforgettable experience filled with warmth and wonder.
     </h2>
 
     <!-- Programs Section -->
-    <section class="py-20 text-center px-20">
+    <section class="py-12 sm:py-16 lg:py-20 text-center px-4 sm:px-8 lg:px-20">
 
-        <h2 class="text-3xl text-green-900 font-bold">The Famous Places in Kampot</h2>
+        <h2 class="text-3xl text-[#0f3d2e] font-bold">The Famous Places in Kampot</h2>
 
-        <div class="grid grid-cols-4 gap-5 mt-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 border-be-amber-100 border-2">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMRPZT8i95SL3hcZTeW9vPbUTTEBRKvVkqnQ&s"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">ក្រុងកំពត</h3>
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 border-be-amber-100 border-2">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/12/4c/ca/35.jpg"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">វត្តសំពៅប្រាំ</h3>
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 border-be-amber-100 border-2">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJJeyQlxEA-2CSIVaiHkc2GpUmNpIQ6Ocl28fHC2TgaVdSLroq3yV6hWB381SmxuM_rp6bx_zya9cqzLKFRo879_86qyZfEX50MLnF0i9WoCaNglMizzVlQoNJD6C9V7VSpDNCJ1rjjII/s1600/dong+te.jpg"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">ឆ្នេរដូងទេរ</h3>
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 border-be-amber-100 border-2">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://en.khmerpostasia.com/wp-content/uploads/2021/01/12-optimized.jpg"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">តំបន់កោះ</h3>
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 border-be-amber-100 border-2">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://ctp.r24k.app/wp-content/uploads/2024/07/xlk2qRMqoPZKgkpotYta.jpg"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">ចម្ការម្រេច</h3>
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 border-be-amber-100 border-2">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://asset.cambodia.gov.kh/tourism/2024/05/photo_2024-05-28_18-46-10-6-1024x576.jpg"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">ក្រុង កំពត</h3>
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 border-be-amber-100 border-2">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://image.thmeythmey.com/pictures/2024/09/26/imgs__1_.jpg"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">លោកយាយម៉ៅ</h3>
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 border-be-amber-100 border-2">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://www.vodkhmer.news/wp-content/uploads/2017/12/26061248_1685050134903208_2059236894_o.jpg"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">វិហារកាតូលិក</h3>
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 border-be-amber-100 border-2">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-nNeINL1SiXznOuexLH1IGqLibGl-3wND0Q&s"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">ច្រកឡើងភ្នំបូកគោ</h3>
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 border-be-amber-100 border-2">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZzGv-FkeZTCOmCBtANBbTvVqgXauYfhfu4A&s"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">សណ្ឋាគារ សុខា</h3>
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 border-be-amber-100 border-2">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwer6cBj1uqKta66c4kfQnAgjsB8r-4lZfJxXQjF2NaSp6qYFqVlbJnLSSYpCz5uWVy5YC_gXg-sTdLp0I8dCMQiUJK_zZVVvx7HMuUCuK98ynyg56MMs8cPfyVqEI1kSHk-negsF=w945-h546-n-k-no"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">ទឹកឈូ</h3>
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 border-be-amber-100 border-2">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweqwwsb1lITx08XZH8Y2fT4lRQsczpTZfOhTsjyiPykik2YH6cnK9axukoADFbnhoo_Jf86EUs0SXg45WdtydTGzhZ9NIluXgHfMzkZsgM3bZnjC2cy67G432v5ZX4yyV--jvAmh=w945-h546-n-k-no"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">ស្រែអំបិល</h3>
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 border-be-amber-100 border-2">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTsJfd1cJZAos05jWUwYaGZzrzpVoI_7-pGQ&s"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">ទឹកធ្លាក់ពពកវិល</h3>
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 border-be-amber-100 border-2">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5rZ8KrywWnaEaXH62XdItb9RcaP1ExMPUCQ&s"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">វាលស្រែ ៥០០</h3>
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 border-be-amber-100 border-2">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkM-_ucwnc3apMYLMS0ViklmFEg15x4FJ_lQ&s"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">បឹងលើភ្នំបូកគោ</h3>
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300 border-be-amber-100 border-2">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSogOo1IIy2IJ_0PQ0iwbjJv9mvHOyx3XvsqA&s"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">ដំណាក់ស្លាខ្មៅ</h3>
@@ -215,7 +232,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-green-900 text-white text-center py-10">
+    <footer class="bg-[#0f3d2e] text-amber-50 text-center py-10 px-4 sm:px-6">
 
         <h3 class="text-xl font-bold mb-3">Cambodia Tour</h3>
         <p>Our programs are designed to help you learn, connect with local communities,
@@ -225,5 +242,46 @@
 
     </footer>
 
+
+<script>
+  const menuButton = document.querySelector('[data-menu-toggle]');
+  const menu = document.querySelector('[data-menu]');
+
+  if (menuButton && menu) {
+    menuButton.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
+      const isOpen = menu.classList.contains('flex');
+      menuButton.setAttribute('aria-expanded', isOpen);
+      if (!isOpen) {
+        document.querySelectorAll('[data-dropdown-menu]').forEach((submenu) => {
+          submenu.classList.add('hidden');
+        });
+      }
+    });
+  }
+
+  document.querySelectorAll('[data-dropdown-toggle]').forEach((button) => {
+    button.addEventListener('click', (event) => {
+      if (window.innerWidth >= 768) return;
+      event.preventDefault();
+      const submenu = button.nextElementSibling;
+      if (submenu) {
+        submenu.classList.toggle('hidden');
+      }
+    });
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768 && menu) {
+      menu.classList.add('hidden');
+      menu.classList.remove('flex');
+      menuButton?.setAttribute('aria-expanded', 'false');
+      document.querySelectorAll('[data-dropdown-menu]').forEach((submenu) => {
+        submenu.classList.add('hidden');
+      });
+    }
+  });
+</script>
 </body>
 </html>

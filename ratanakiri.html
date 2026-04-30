@@ -9,43 +9,57 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
 
   <style>
     body {
       font-family: 'Poppins', sans-serif;
+      color: #1f2937;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
     }
   </style>
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-[#f7f3e8] text-slate-800 pt-24 md:pt-20">
 
 <!-- Navbar -->
-    <header class="bg-green-900 text-white fixed top-0 left-0 w-full z-50">
-        <div class="flex justify-between items-center px-20 py-5">
+    <header class="bg-[#0f3d2e]/95 backdrop-blur text-white shadow-lg shadow-black/10 fixed top-0 left-0 w-full z-50">
+        <div class="flex flex-wrap md:flex-nowrap justify-between items-center gap-4 px-4 sm:px-8 lg:px-20 py-4 md:py-5">
 
-            <h2 class="text-xl font-bold">Cambodia Tours</h2>
+            <h2 class="text-lg sm:text-xl font-bold tracking-wide text-amber-100">Cambodia Tours</h2>
 
-            <ul class="flex space-x-6 items-center">
+            <button type="button" data-menu-toggle aria-expanded="false" aria-label="Open menu" class="md:hidden p-2">
+                <span class="material-symbols-outlined text-3xl leading-none">menu</span>
+            </button>
+
+            <ul data-menu class="hidden w-full flex-col gap-3 text-sm sm:text-base md:flex md:w-auto md:flex-row md:items-center md:gap-6">
 
                 <li>
-                    <a href="index.html" class="hover:text-yellow-300">Home</a>
+                    <a href="index.html" class="block hover:text-amber-300 transition-colors">Home</a>
                 </li>
 
                 <!-- Programs Dropdown -->
                 <li class="relative group">
-                    <a href="#" class="hover:text-yellow-300">Programs</a>
+                    <a href="#" data-dropdown-toggle class="flex items-center justify-between hover:text-amber-300 transition-colors md:block">
+                        Programs
+                        <span class="material-symbols-outlined md:hidden text-base">expand_more</span>
+                    </a>
 
-                    <div class="absolute left-0 top-full hidden group-hover:block bg-white text-black w-48 rounded-lg shadow-lg z-50">
-                        <a href="culture.html" class="block px-4 py-2 hover:bg-gray-200">
+                    <div data-dropdown-menu class="hidden md:absolute md:left-0 md:top-full md:group-hover:block bg-[#fffaf0] text-slate-800 w-full md:w-56 rounded-xl shadow-xl ring-1 ring-amber-100 z-50 mt-2 md:mt-0">
+                        <a href="culture.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Cultural
                         </a>
 
-                        <a href="nature.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="nature.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Nature & Adventure
                         </a>
 
-                        <a href="entertainment.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="entertainment.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Entertainment
                         </a>
                     </div>
@@ -53,34 +67,37 @@
 
                 <!-- Destinations Dropdown -->
                 <li class="relative group">
-                    <a href="#" class="hover:text-yellow-300">Destinations</a>
+                    <a href="#" data-dropdown-toggle class="flex items-center justify-between hover:text-amber-300 transition-colors md:block">
+                        Destinations
+                        <span class="material-symbols-outlined md:hidden text-base">expand_more</span>
+                    </a>
 
-                    <div class="absolute left-0 top-full hidden group-hover:block bg-white text-black w-48 rounded-lg shadow-lg z-50">
-                        <a href="phnompenh.html" class="block px-4 py-2 hover:bg-gray-200">
+                    <div data-dropdown-menu class="hidden md:absolute md:left-0 md:top-full md:group-hover:block bg-[#fffaf0] text-slate-800 w-full md:w-56 rounded-xl shadow-xl ring-1 ring-amber-100 z-50 mt-2 md:mt-0">
+                        <a href="phnompenh.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Phnom Penh
                         </a>
 
-                        <a href="siemreap.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="siemreap.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Siem Reap
                         </a>
 
-                        <a href="kohkong.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="kohkong.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Koh Kong
                         </a>
 
-                        <a href="kampot.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="kampot.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Kampot
                         </a>
 
-                        <a href="sihaknuk.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="sihaknuk.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Sihanoukville
                         </a>
 
-                        <a href="mondulkiri.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="mondulkiri.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Mondulkiri
                         </a>
 
-                        <a href="ratanakiri.html" class="block px-4 py-2 hover:bg-gray-200">
+                        <a href="ratanakiri.html" class="block px-4 py-2 hover:bg-amber-100 transition-colors">
                             Ratanakiri
                         </a>
 
@@ -89,81 +106,81 @@
 
                 <!-- Normal Menu -->
                 <li>
-                    <a href="about.html" class="hover:text-yellow-300">About</a>
+                    <a href="about.html" class="block hover:text-amber-300 transition-colors">About</a>
                 </li>
 
                 <li>
-                    <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+                    <a href="contact.html" class="block hover:text-amber-300 transition-colors">Contact</a>
                 </li>
 
             </ul>
 
         </div>
-    </header><br><br>
+    </header>
 
-    <h1 class="text-3xl font-bold text-green-900 text-center mt-10">Welcome to Ratanakiri!</h1>
+    <h1 class="text-3xl font-bold text-[#0f3d2e] text-center mt-10">Welcome to Ratanakiri!</h1>
 
-    <p class="text-center px-20">
+    <p class="text-center px-4 sm:px-8 lg:px-20">
         Ratanakiri, a province in eastern Cambodia! Explore the rich history, culture, and natural beauty that
         this dynamic destination has to offer.
     </p>
 
     <!-- Programs Section -->
-    <section class="py-20 text-center px-20">
+    <section class="py-12 sm:py-16 lg:py-20 text-center px-4 sm:px-8 lg:px-20">
 
-        <h2 class="text-3xl text-green-900 font-bold">The Famous Places in Ratanakiri</h2>
+        <h2 class="text-3xl text-[#0f3d2e] font-bold">The Famous Places in Ratanakiri</h2>
 
-        <div class="grid grid-cols-4 gap-5 mt-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7xxQ3l2nKWq1Qtxh2QJoJJPAilekYHY52mQ&s"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">ក្រុង​ បានលុង</h3>
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://visitlocaltravel.com/blog/wp-content/uploads/2024/08/Boeng-Kan-Seng-Overview-990x540.png"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">បឹងកន្សែង</h3>
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://i0.wp.com/www.cambodialifestyle.com/wp-content/uploads/2024/04/Ratanakiri-6.jpg"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">បឹងយក្សឡោម</h3>
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-LBL9Tf6UxCz3Dr9oCNnsME2Q5rd_hG_mDQ&s"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">បឹង​យក្សាម៉ាយ</h3>
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://www.cnc.com.kh/news/laravel-filemanager/photos/23/5f0590dd3bb06.jpg"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">ឧទ្យានជាតិវីរះជ័យ</h3>
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqaBXmrt5CJrFpJFez39YRn77xm6ucGx4dFQ&s"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">ទឹកធ្លាក់៧ជាន់ អូរសិនលែរ</h3>
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://www.cnc.com.kh/news/laravel-filemanager/photos/34/650178a7cbd53.jpg"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">ភ្នំឥសីបត្តម:</h3>
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://www.backpackadventures.org/wp-content/uploads/2023/02/IMG_6830.jpg"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">ផ្ទះជនជាតិដើមភាគតិច</h3>
             </div>
 
-            <div class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+            <div class="bg-white/95 rounded-xl shadow-md shadow-emerald-950/5 hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-amber-100 overflow-hidden">
                 <img src="https://www.greeneratravel.com/userfiles/thumbs/terresrougeslodge.jpg"
                     class="w-full h-52 object-cover rounded-t-lg">
                 <h3 class="p-4 font-semibold">Resort</h3>
@@ -174,7 +191,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-green-900 text-white text-center py-10">
+    <footer class="bg-[#0f3d2e] text-amber-50 text-center py-10 px-4 sm:px-6">
 
         <h3 class="text-xl font-bold mb-3">Cambodia Tour</h3>
         <p>Our programs are designed to help you learn, connect with local communities,
@@ -184,5 +201,46 @@
 
     </footer>
 
+
+<script>
+  const menuButton = document.querySelector('[data-menu-toggle]');
+  const menu = document.querySelector('[data-menu]');
+
+  if (menuButton && menu) {
+    menuButton.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
+      const isOpen = menu.classList.contains('flex');
+      menuButton.setAttribute('aria-expanded', isOpen);
+      if (!isOpen) {
+        document.querySelectorAll('[data-dropdown-menu]').forEach((submenu) => {
+          submenu.classList.add('hidden');
+        });
+      }
+    });
+  }
+
+  document.querySelectorAll('[data-dropdown-toggle]').forEach((button) => {
+    button.addEventListener('click', (event) => {
+      if (window.innerWidth >= 768) return;
+      event.preventDefault();
+      const submenu = button.nextElementSibling;
+      if (submenu) {
+        submenu.classList.toggle('hidden');
+      }
+    });
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768 && menu) {
+      menu.classList.add('hidden');
+      menu.classList.remove('flex');
+      menuButton?.setAttribute('aria-expanded', 'false');
+      document.querySelectorAll('[data-dropdown-menu]').forEach((submenu) => {
+        submenu.classList.add('hidden');
+      });
+    }
+  });
+</script>
 </body>
 </html>
